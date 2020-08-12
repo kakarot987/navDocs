@@ -1,0 +1,27 @@
+.fileBox{
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        max-width: auto;
+        max-height : auto;
+        text-align: left;
+        font-family: arial;
+        padding : 10px 10px 10px 10px;
+        text-overflow: ellipsis;
+        margin-left: 5px;
+        margin-bottom: 5px;
+        background-position: top right;
+        background-size: 150px;
+        background-repeat: no-repeat;
+        background-image: url(../../assets/Navigus.png);
+      }
+.headr{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: auto;
+    max-height : auto;
+    text-align: center;
+    padding : 10px 10px 10px 10px;
+    margin : 20px 20px 20px 20px;
+    background-image: linear-gradient(to right, white, rgb(138, 138, 138));
+    font-size: xx-large ;
+    font-weight: bold;
+
+}      

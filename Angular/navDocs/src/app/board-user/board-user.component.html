@@ -1,0 +1,27 @@
+<div style="text-align: center; padding: 10px;">
+  <h4>
+    <strong>UserName : {{ currentUser.username }}</strong>
+  </h4>
+</div>
+
+<div style="background-image: linear-gradient(to right, white , black); padding: 5px;"><h3>List of Files :</h3></div>
+<ul id="myUL"  *ngFor="let file of fileInfos | async">
+ <li><a (click)="cookiePost(file.name, file.url)">{{ file.name }}</a></li> 
+</ul>
+
+<div style="background-image: linear-gradient(to right, white , black); padding: 5px; margin-top: 10px;"><h3>Last 20 visited Users</h3></div>
+
+<div>
+  <table>
+    <tr>
+      <th>UserName</th>
+      <th>Document Name</th>
+      <th>Time</th>
+    </tr>
+    <tr *ngFor="let a of arr.slice(0,20)">
+      <td>{{a.username}}</td>
+      <td>{{a.docName}}</td>
+      <td>{{a.time | date:'HH:mm:ss'}}</td>
+    </tr>
+  </table>
+</div>
